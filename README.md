@@ -18,4 +18,4 @@ This is a solution to the Tech Book Club landing page challenge. It is a fully r
 
 ## Live Demo 🔗
 
-[Click here to view the Live Website](#)
+[Click here to view the Live Website](https://zainijaz166.github.io/tech-book-club-landing-page-main/)
