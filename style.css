@@ -1,0 +1,1171 @@
+:root {
+  --Grey: rgb(107, 105, 105);
+  --soft-yellow: rgb(245, 241, 236);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*========= This is my navbar ===========*/
+.navbar {
+  width: 100%;
+}
+
+.navbar-content {
+  width: 78%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+/* ========= Header Part =========*/
+.header-container {
+  font-family: "Martian Mono", monospace;
+  background-image: url(assets/pattern-light-bg.svg);
+  background-color: var(--soft-yellow);
+  width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.left-side {
+  margin-bottom: 7rem;
+}
+
+.heading-part {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.heading {
+  width: 570px;
+}
+
+.heading h1 {
+  background: linear-gradient(to right, #a2770a, #000000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.heading p {
+  font-family: "Inter", sans-serif;
+  color: var(--Grey);
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.membership-button {
+  font-family: "Martian Mono", monospace;
+  background-color: var(--soft-yellow);
+  color: var(--Grey);
+  display: flex;
+  border: 2px solid black;
+  width: 56%;
+  padding: 0 22px;
+  margin-top: 30px;
+  border-radius: 8px;
+  gap: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.membership-button:hover {
+  background: linear-gradient(to right, #a2770a, #f6cece);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.review-part {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 1;
+  margin-top: 14px;
+  font-size: 11px;
+}
+
+.review-avatar {
+  width: 6rem;
+}
+
+.review-star p {
+  width: 100%;
+  font-size: 12px;
+}
+
+.heading-photo {
+  display: flex;
+  justify-content: center;
+  width: 560px;
+  z-index: 3;
+}
+
+.hero-photo {
+  width: 100%;
+  border-radius: 12px;
+  height: auto;
+  object-fit: cover;
+}
+
+.header-glow-content {
+  position: absolute;
+  right: -30rem;
+  top: 12rem;
+  z-index: 0;
+}
+
+/* ==== This is my main container ==== */
+.container {
+  font-family: "Martian Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+/* === This is my features/Reading content part === */
+.reading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10rem auto 0;
+  gap: 6rem;
+  flex-wrap: wrap-reverse;
+}
+
+.reading-img img {
+  width: 560px;
+  border-radius: 12px;
+}
+
+.caption {
+  width: 40%;
+  min-width: 300px;
+}
+
+.caption h2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: clamp(20px, 50px, 60px);
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.caption-content {
+  width: 85%;
+  padding: 0;
+}
+
+.caption-items {
+  color: var(--Grey);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  font-size: 20px;
+  gap: 12px;
+  line-height: 1.5;
+}
+
+/* ======== This is my community/Book container ========= */
+.book-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5rem auto;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.title-part {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 43%;
+}
+
+.title-part h3 {
+  font-size: 45px;
+  margin: 14px 0;
+}
+
+.club-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+}
+
+.circle {
+  position: absolute;
+  top: -3px;
+  right: -8px;
+  width: 120%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+.title-part p {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(10px, 18px, 24px);
+  width: 81%;
+  color: rgb(67, 67, 67);
+}
+
+.tech-logo {
+  position: absolute;
+  top: 47%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.tech-img {
+  max-width: 100%;
+  width: 560px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ============== This is my Tech/how-it-works Container ============= */
+.tech-reading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tech-container {
+  background-image: url(assets/pattern-light-bg.svg);
+  background-color: rgb(247, 244, 239);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 87%;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-heading {
+  font-size: 40px;
+  width: 420px;
+  text-align: center;
+}
+
+.reading-method {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.reading-method div {
+  font-weight: 600;
+  width: 230px;
+}
+
+.reading-content {
+  display: flex;
+  gap: 7rem;
+}
+
+.number {
+  border: 2px solid black;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.reading-method p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.four-number {
+  margin-bottom: 2rem;
+}
+
+.card-glow-content {
+  position: absolute;
+  left: 28rem;
+  top: 0rem;
+}
+
+/*========= This is my pricing/Membership part ======== */
+.card-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.membership-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  margin-top: 10rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-starter {
+  border: 1px solid grey;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 285px;
+  margin: 20px 0;
+  padding: 16px;
+}
+
+.card-starter h2 {
+  font-size: 30px;
+  margin: 2px 0;
+  font-weight: 600;
+}
+
+.card-items {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.amount {
+  font-size: 28px;
+  margin-top: 0px;
+}
+
+.hr-lines {
+  width: 15.5rem;
+  background-color: rgb(211, 209, 209);
+  height: 1px;
+}
+
+.membership-content-list {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
+  line-height: 0.5;
+}
+
+.card-starter button,
+.card-enterprise button {
+  border-radius: 8px;
+  font-family: "Martian Mono", monospace;
+}
+
+.card-pro {
+  background-color: rgba(255, 248, 239, 0.986);
+  border: 1px solid grey;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 330px;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-pro h2 {
+  font-size: 28px;
+  margin: 14px 0;
+}
+
+.card-pro button {
+  font-family: "Martian Mono", monospace;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.pro-card-glow {
+  position: absolute;
+  margin-top: 65px;
+  width: 550px;
+}
+
+.card-enterprise {
+  border: 1px solid grey;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 290px;
+  margin: 20px 0;
+  padding: 16px;
+}
+
+.card-enterprise h2 {
+  font-size: 28px;
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+.custom {
+  font-weight: 700;
+}
+
+/* ===== This is my review container ===== */
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 8rem 0;
+  height: auto;
+}
+
+.review-paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 22px;
+  width: 65%;
+}
+
+.review-paragraph p {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+/* =========This is my Footer container ========= */
+.footer-container {
+  font-family: "Martian Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(assets/pattern-dark-bg.svg);
+  background-color: #062730;
+  color: aliceblue;
+  width: 100%;
+  padding-top: 60px;
+  gap: 16px;
+  border-radius: 22px 22px 0 0;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 43%;
+}
+
+.footer-container h2 {
+  font-size: 47px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-btn {
+  font-family: "Martian Mono", monospace;
+  background-color: transparent;
+  color: aliceblue;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 2px solid white;
+  text-decoration: none;
+}
+.footer-btn:hover{
+    background: linear-gradient(to right, #dde2ec, #c3bae1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-review-part {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  line-height: 0;
+  margin-top: 14px;
+  font-size: 10px;
+  margin-bottom: 3rem;
+}
+
+.horizontol {
+  width: 80%;
+  height: 1px;
+  background-color: rgb(133, 133, 133);
+}
+
+.footer-copyright {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.footer-copyright p {
+  font-size: 14px;
+}
+
+.media-content {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* =========================================
+   MEDIA QUERY: TABLET / SMALL DESKTOP
+   (670px - 1170px)
+   ========================================= */
+
+@media (min-width: 670px) and (max-width: 1170px) {
+  .header-container {
+    width: 100%;
+  }
+  .navbar-content {
+    width: 90%;
+    padding-bottom: 0;
+  }
+  .left-side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .heading {
+    width: 94%;
+  }
+  .heading h1 {
+    font-size: 90px;
+  }
+  .heading p {
+    font-size: 28px;
+  }
+  .heading-review-btn {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+  }
+  .membership-button {
+    background-color: rgb(242, 237, 231);
+    width: 70%;
+    font-size: 22px;
+  }
+  .review-part {
+    line-height: 0;
+  }
+  .review-avatar {
+    width: 11%;
+    margin-bottom: 8px;
+  }
+  .review-star p {
+    font-size: 19px;
+  }
+
+  .heading-photo {
+    width: 100%;
+  }
+  .hero-photo {
+    width: 94%;
+    margin: 0 auto;
+  }
+  .header-glow-content {
+    top: 85rem;
+  }
+
+  /* this is my Main container  */
+  .container {
+    width: 100%;
+  }
+
+  /* ===== This is my reading content container==== */
+
+  .reading-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 5rem 0 0 0rem;
+    gap: 0;
+  }
+
+  .caption {
+    width: 100%;
+  }
+
+  .caption h2 {
+    width: 65%;
+    font-size: 55px;
+  }
+
+  .caption-items {
+    line-height: 0.5;
+  }
+
+  .caption-items p {
+    font-size: 25px;
+  }
+
+  .reading-img img {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  /* == This is my book content container == */
+  .book-container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin: 4rem;
+    gap: 0;
+  }
+
+  .title-part {
+    width: 100%;
+  }
+
+  .book-content-heading {
+    width: 80%;
+  }
+
+  .title-part h3 {
+    font-size: 60px;
+  }
+
+  .title-part p {
+    width: 100%;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+  .tech-img {
+    width: 100%;
+  }
+
+  .tech-logo {
+    position: relative;
+    top: 53rem;
+    left: 47rem;
+  }
+
+  /* This is my Tech Reading content Container  */
+  .tech-reading {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+  .tech-container {
+    width: 97%;
+    padding-top: 2rem;
+    padding-left: 1.7rem;
+  }
+  .tech-heading {
+    display: flex;
+    align-self: start;
+    text-align: start;
+    font-size: 60px;
+    width: 80%;
+    font-weight: 500;
+  }
+
+  .card-glow-content {
+    top: 15rem;
+    left: 15rem;
+  }
+  .reading-method {
+    gap: 10px;
+  }
+
+  .reading-method div {
+    width: 100%;
+  }
+
+  .reading-method p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .reading-content img {
+    display: none;
+  }
+
+  /* This is my Membership container  */
+  .card-content {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .membership-heading {
+    display: flex;
+    justify-content: start;
+    margin-top: 4rem;
+    font-size: 60px;
+    font-weight: 600;
+  }
+  .card-container {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+  .card-starter {
+    width: 45%;
+    height: 400px;
+    margin: 0;
+    padding-top: 22px;
+  }
+  .card-starter h2 {
+    margin-bottom: 30px;
+  }
+  .card-pro {
+    width: 45%;
+    height: 400px;
+  }
+  .amount-content {
+    display: flex;
+    align-items: center;
+    color: var(--Grey);
+  }
+  .amount {
+    color: #000000;
+    font-size: 40px;
+    padding-right: 12px;
+  }
+  .hr-lines {
+    margin: 1rem 0;
+    width: 98%;
+  }
+  .card-items {
+    line-height: 0;
+  }
+
+  .card-items p {
+    font-size: 28px;
+    color: var(--Grey);
+  }
+  .subs-button {
+    font-size: 24px;
+  }
+  .pro-card-glow {
+    top: 5rem;
+    left: 5rem;
+  }
+
+  .card-enterprise {
+    width: 45%;
+    height: 400px;
+  }
+
+  /* This is my review part  */
+
+  .review-container {
+    display: flex;
+    justify-content: baseline;
+    width: 100%;
+    margin: 3rem;
+  }
+  .review-star {
+    align-self: baseline;
+  }
+  .review-paragraph {
+    align-self: baseline;
+    text-align: start;
+    width: 100%;
+    font-size: 29px;
+    font-weight: 300;
+    flex-wrap: wrap;
+  }
+  .review-paragraph p {
+    align-self: start;
+  }
+
+  /* This is mt footer part  */
+  .footer-container {
+    width: 100%;
+  }
+  .footer-heading {
+    width: 80%;
+  }
+  .footer-heading h2 {
+    font-size: 60px;
+    font-weight: 400;
+    color: rgb(255, 253, 250);
+  }
+  .footer-btn {
+    display: flex;
+    justify-content: center
+    ;
+    width: 70%;
+    font-size: 18px;
+  }
+  .footer-review-part {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+  }
+  .review-avatar {
+    width: 6rem;
+  }
+
+  .footer-review-paragraph {
+    color: snow;
+    font-size: 16px;
+  }
+  .horizontol {
+    width: 100%;
+  }
+  .footer-copyright {
+    width: 90%;
+  }
+}
+
+/* =========================================
+   MEDIA QUERY: Mobile Screen
+   ========================================= */
+@media (max-width: 670px) {
+  /* this is my header part  */
+
+  .header-container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .navbar-content {
+    width: 90%;
+    padding-bottom: 0;
+  }
+
+  .heading-part {
+    width: 100%;
+  }
+  .left-side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .heading {
+    width: 90%;
+  }
+  .heading h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .heading p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .heading-review-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96%;
+  }
+  .membership-button {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    font-size: 13px;
+    padding: 2px 8px;
+    gap: 1rem;
+  }
+  .membership-button img {
+    width: 6%;
+  }
+
+  .review-part {
+    width: 90%;
+  }
+  .review-star p {
+    font-size: clamp(10px, 14px, 20px);
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    margin: 4px;
+  }
+
+  .heading-photo {
+    width: 100%;
+  }
+  .hero-photo {
+    width: 90%;
+    border-radius: 6px;
+    margin: 0 auto;
+  }
+  .header-glow-content {
+    display: none;
+  }
+
+  /* this is my Main container  */
+  .container {
+    width: 100%;
+    padding: 14px;
+  }
+
+  /* This is my reading content container==== */
+
+  .reading-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 3rem 0 0 0rem;
+    gap: 0;
+  }
+
+  .caption {
+    width: 100%;
+  }
+
+  .caption h2 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  .caption-items {
+    line-height: 1;
+  }
+
+  .caption-items p {
+    font-size: 15px;
+  }
+
+  .reading-img img {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  /* == This is my book content container == */
+  .book-container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin: 2rem;
+    gap: 0;
+  }
+
+  .title-part {
+    width: 100%;
+  }
+
+  .book-content-heading {
+    width: 90%;
+  }
+
+  .title-part h3 {
+    font-size: 26px;
+  }
+
+  .title-part p {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+  .tech-img {
+    width: 100%;
+  }
+
+  .tech-logo {
+    display: none;
+  }
+
+  /* This is my Tech Reading content Container  */
+  .tech-reading {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+  .tech-container {
+    width: 95%;
+    padding-top: 2rem;
+    padding-left: 12px;
+  }
+  .tech-heading {
+    display: flex;
+    align-self: start;
+    text-align: start;
+    width: 80%;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .reading-method {
+    gap: 4px;
+  }
+
+  .reading-method div {
+    width: 100%;
+  }
+
+  .reading-method p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .card-glow-content,
+  .reading-content img {
+    display: none;
+  }
+  .number {
+    border-radius: 4px;
+  }
+
+  /* This is my Membership container  */
+  .card-content {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .membership-heading {
+    display: flex;
+    justify-content: start;
+    margin-top: 4rem;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .card-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  .card-starter {
+    width: 90%;
+    height: auto;
+    margin: 0;
+    padding-top: 22px;
+  }
+  .card-starter h2 {
+    margin-bottom: 30px;
+  }
+  .card-pro {
+    width: 90%;
+    height: auto;
+  }
+  .amount-content {
+    display: flex;
+    align-items: center;
+    color: var(--Grey);
+  }
+  .amount {
+    color: #000000;
+    font-size: 30px;
+    padding-right: 12px;
+  }
+  .hr-lines {
+    margin: 1rem 0;
+    width: 98%;
+  }
+  .card-items {
+    line-height: 0;
+    margin-bottom: 2rem;
+  }
+
+  .card-items p {
+    font-size: 18px;
+    color: var(--Grey);
+  }
+  .subs-button {
+    font-size: 18px;
+  }
+  .pro-card-glow {
+    top: 5rem;
+    left: 5rem;
+  }
+
+  .card-enterprise {
+    width: 90%;
+    height: auto;
+  }
+
+  /* This is my review part  */
+
+  .review-container {
+    display: flex;
+    justify-content: baseline;
+    width: 100%;
+    margin: 3rem;
+  }
+  .review-star {
+    align-self: baseline;
+  }
+  .review-paragraph {
+    align-self: baseline;
+    text-align: start;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    flex-wrap: wrap;
+  }
+  .review-paragraph p {
+    font-size: 15px;
+    align-self: start;
+  }
+
+  /* This is mt footer part  */
+  .footer-container {
+    width: 100%;
+  }
+  .footer-heading {
+    width: 80%;
+  }
+  .footer-heading h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(255, 253, 250);
+  }
+  .footer-btn {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-size: 14px;
+  }
+  .footer-review-part {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .review-avatar {
+    width: 5rem;
+  }
+
+  .footer-review-paragraph {
+    color: snow;
+    font-size: 16px;
+  }
+  .horizontol {
+    width: 90%;
+  }
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+  }
+}
