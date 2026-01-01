@@ -13,7 +13,6 @@ This is a solution to the Tech Book Club landing page challenge. It is a fully r
 
 - HTML5
 - CSS3 (Flexbox, CSS Variables, & Media Queries)
-- Google Fonts (Martian Mono & Inter)
 - Git & GitHub
 
 ## Live Demo 🔗
